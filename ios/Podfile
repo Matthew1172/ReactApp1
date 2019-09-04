@@ -1,8 +1,8 @@
 platform :ios, '9.0'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
-target 'AwesomeProject' do
-  # Pods for AwesomeProject
+target 'ReactApp1' do
+  # Pods for ReactApp1
   pod 'React', :path => '../node_modules/react-native/'
   pod 'React-Core', :path => '../node_modules/react-native/React'
   pod 'React-DevSupport', :path => '../node_modules/react-native/React'
@@ -27,10 +27,7 @@ target 'AwesomeProject' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
-
-  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
-
-  target 'AwesomeProjectTests' do
+  target 'ReactApp1Tests' do
     inherit! :search_paths
     # Pods for testing
   end
@@ -38,10 +35,10 @@ target 'AwesomeProject' do
   use_native_modules!
 end
 
-target 'AwesomeProject-tvOS' do
-  # Pods for AwesomeProject-tvOS
+target 'ReactApp1-tvOS' do
+  # Pods for ReactApp1-tvOS
 
-  target 'AwesomeProject-tvOSTests' do
+  target 'ReactApp1-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
   end
